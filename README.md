@@ -23,7 +23,29 @@
    - A profile can be assigned to many users but a user can have only one profile.
    - WIth standard profile we can't edit object permissions 
    
-   
-  
+The page layout editor lets you:
+Control which fields, lists of related records, and custom links users see
+Customize the order that the fields appear in the page details
+Determine whether fields are visible, read only, or required
+Control which standard and custom buttons appear on records and related lists
+Control which quick actions appear on the page
+
+Custom links can link to an external URL, such as www.google.com, a Visualforce page, or your company’s intranet. Custom buttons can connect users to external applications, such as web pages, and launch custom links
+
+Object-specific actions : Object-specific actions have automatic relationships to other records and let users quickly create or update records, log calls, send emails, and more, in the context of a particular object.
+Object-specific Create actions create records that are automatically associated with related records.
+Object-specific Update a Record actions make it easy for users to edit records. You can define the fields that are available for update.
+Object-specific Log a Call actions let users enter notes about calls, meetings, or other interactions that are related to a specific record.
+Object-specific custom actions invoke Lightning components, flows, Visualforce pages, or canvas apps that let users interact with or create records that have a relationship to an object record. If you’re new to Visualforce, don’t worry. You can learn all about it in another module. For now, remember that Visualforce pages allow you to do really cool customizations in your actions.
+Object-specific Send Email actions, available only on cases, give users access to a simplified version of the Case Feed Email action in the Salesforce mobile app. You can use the case-specific Send Email action in Salesforce Classic, Lightning Experience, and the Salesforce mobile app
+
+Global actions
+You create global actions in a different place in Setup than you create object-specific actions. They’re called global actions because they can be put anywhere actions are supported. Use global actions to let users log call details, create or update records, or send email, all without leaving the page they’re on.
+Global actions live on a special layout of their own, known as the global publisher layout. It isn’t associated with an object, and it populates the global actions menu in Lightning Experience. Users can access the global actions menu by clicking Global Actions menu icon in the Salesforce header.
+
+Quick Actions: They offer a fast way for mobile users to launch a specific workflow in the Salesforce mobile app, like creating records, logging calls, or sharing files
+
+Compact Layouts
+When you open a record in the Salesforce mobile app, you see highlights about that record in the header of the page. Compact layouts control which fields appear in the header. For each object, you can assign up to four fields to display in that area
 
   
