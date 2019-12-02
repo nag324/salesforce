@@ -48,4 +48,57 @@ Quick Actions: They offer a fast way for mobile users to launch a specific workf
 Compact Layouts
 When you open a record in the Salesforce mobile app, you see highlights about that record in the header of the page. Compact layouts control which fields appear in the header. For each object, you can assign up to four fields to display in that area
 
-  
+ --While formula fields calculate values using fields within a single record, roll-up summary fields calculate values from a set of related records, such as those in a related list
+ 
+ --Validation rules verify that data entered by users in records meet the standards you specify before they can save it. A validation rule can contain a formula or expression that evaluates the data in one or more fields and returns a value of “True” or “False.” Validation rules can also include error messages to display to users when they enter invalid values based on specified criteria
+ 
+-- Picklist:
+We have three types of picklists:
+Standard
+Custom
+Custom Multi-Select
+And picklist fields can have the following properties:
+Restricted
+Dependent or Controlling
+
+--For standard picklists, each value can have up to 255 characters, not including line breaks and returns. This applies to single-select and multi-select picklists
+
+Limits for Custom Picklists
+Custom single-select picklists can have:
+
+Up to 1,000 values
+Up to 255 characters per value
+Custom multi-select picklists can have:
+
+Up to 500 values
+Up to 255 characters per value
+---
+Functional Limitations for Custom Picklists
+You can make a custom single-select picklist field into a restricted picklist only if the picklist has fewer than 1,000 values (or entries). You can make a custom multi-select picklist field into a restricted picklist only if the picklist has fewer than 500 values (or entries). A restricted picklist’s values are limited to only those values defined by a Salesforce admin. This prevents users from loading redundant or erroneous values through the API.
+Global picklist value sets are always restricted picklists. This is a good thing, as it preserves data integrity. (Global value sets are shared across objects. Reuse the value set for any custom picklist field.)
+For custom picklist fields that use a global picklist value set, you can change from a single-select to multi-select picklist and vice versa. However, you can’t change the picklist to a different field type such as checkbox, currency, or text.
+You can’t undo a custom picklist field’s association with a global value set. If you need a picklist field to use a different global value set, or different individual values, delete the custom picklist field and create a new one in its place.
+
+--Dependent Picklists
+Guide users, save UI space, and further improve data integrity with a dependent picklist. A dependent picklist filters values for one picklist based on a selection from another picklist or a checkbox (the controlling value) on the same record.
+
+	                           Standard Picklist	Custom Picklist	Custom Multi-Select Picklist
+Add/Remove from Page Layouts	yes              	yes	             yes
+Delete from Your Org		      No                  yes	             yes
+Set a Default Value	          yes	yes	yes
+Use a Formula for a Default Value		No yes	yes
+Can Select Multiple Values		No	yes  No
+Can Add Values via Apps or API	yes	yes	yes
+Can Be Restricted		No yes	yes
+Can Be a Dependent Picklist		No yes	yes
+
+--Decide whether to replace the value or leave it blank. If you replace it with a blank value, existing records will not display the value anymore. To keep the value on existing records, use Deactivate, instead of Del.
+--If you replace a parent value in a controlling picklist, the picklist dependency on that value is lost. After replacing the parent value, re-create the dependency using the new parent value.
+--Global value sets let you share the same picklist values with more than one picklist field.
+--AppExchange is the marketplace for all things Salesforce, including apps, Lightning components, Flow solutions, and more.
+
+--What Is External Services?
+With External Services, you use declarative tools to import Swagger or Interagent-based API definitions right into Salesforce using a schema. Once you import the definitions, you can create a flow based on the Apex classes generated from your External Services registration
+
+
+ 
