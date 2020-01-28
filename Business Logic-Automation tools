@@ -1,0 +1,8 @@
+Flow builder : can't do sending an outbound message without code or invoking a process.
+Variable resouce in Flow : holds mutliple field values for mutliple records ; holds values that can be changed any point in the flow.
+Record variable : to store multiple field values related to a single ecord in flow designer.
+Flows can be launched using user interactions custom button, cutom link or auto launch with process builders.
+
+Read only fields like formula and autonumber can' be used in workflows.
+
+When "Re Evaluate workflow" is checked all the workflows on the associated object whose criteria is met will be triggered.
