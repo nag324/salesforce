@@ -1,0 +1,5 @@
+objects access can be set using profiles and permission sets
+In Salesforce classic , "Sharing" button on the page layout enables manual sharing
+View All and View All data override any data sharing rules.
+Profiles settings define what can be done with records . Roles control visibility of the records.
+Public griup contains users, roles,other public groups, roles, subprdinates in hirerachy, users assigned to territory
