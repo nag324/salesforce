@@ -1,0 +1,9 @@
+joined reports creates multiple report blocks providing different views of data
+report folders can be shared to users , roles and groups
+dashboard viewer setting enables user to see data based on his access levels.
+cross filters are used to include/exclude records on related objects and sub filters can be added to further refine the results.
+dashboard components:
+metric component - display one key value
+guauge compenent-single value within a range of values
+lightning table-200 records and 10 columns in tabular format from any field in source eport type
+
